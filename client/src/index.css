@@ -25,3 +25,7 @@
 .secondary-bg{
   background-color: #3F4F44;
 }
+
+button{
+  cursor: pointer;
+}

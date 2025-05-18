@@ -6,7 +6,7 @@ const { Server } = require("socket.io");
 const taskRoutes = require("./routes/taskRoutes");
 const connectDB = require("./lib/connectDB");
 const dotenv = require("dotenv").config();
-const taskRoutes = require('./routes/taskRoutes');
+const taskRoute = require('./routes/taskRoutes');
 
 const app = express();
 const server = http.createServer(app);
@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/api", taskRoutes);
+app.use("/api", taskRoute);
 
 // Connect MongoDB
 connectDB();
