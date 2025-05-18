@@ -3,7 +3,6 @@ const http = require("http");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const { Server } = require("socket.io");
-const taskRoutes = require("./routes/taskRoutes");
 const connectDB = require("./lib/connectDB");
 const dotenv = require("dotenv").config();
 const taskRoute = require('./routes/taskRoutes');

@@ -7,7 +7,7 @@ export default function Completed() {
   return (
     <div>
       {/* header  */}
-      <div className="flex items-center gap-2 primary-bg rounded-lg p-3 justify-between">
+      <div className="flex items-center gap-2 primary-bg rounded-lg p-3 justify-between sticky top-0 shadow-md">
         <div className="flex items-center gap-2">
           <FiPlus />
           <h1 className="font-semibold">Completed</h1>

@@ -29,3 +29,7 @@
 button{
   cursor: pointer;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
