@@ -8,7 +8,7 @@ export default function Todo() {
   const { allTasks } = useAllTasks();
   const filterTodo = allTasks?.filter((prev) => prev.category === "todo");
   return (
-    <div className="mb-5 relative">
+    <div className="mb-5 relative w-full">
       {/* header  */}
       <div className="flex items-center gap-2 primary-bg rounded-lg p-3 justify-between sticky top-0 shadow-md">
         <div className="flex items-center gap-2">

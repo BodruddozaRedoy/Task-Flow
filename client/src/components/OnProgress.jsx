@@ -10,7 +10,7 @@ export default function OnProgress() {
    const { allTasks } = useAllTasks();
     const filterTodo = allTasks?.filter((prev) => prev.category === "on-progress");
   return (
-    <div>
+    <div className="w-full">
       {/* header  */}
       <div className="flex items-center gap-2 primary-bg rounded-lg p-3 justify-between sticky top-0 shadow-md">
         <div className="flex items-center gap-2">
