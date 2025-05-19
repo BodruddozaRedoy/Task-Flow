@@ -38,8 +38,8 @@ export default function UpdateTask({ setUpdateTask, id }) {
     }
   };
   return (
-    <div className="flex items-center justify-center backdrop-blur-md bg-black/20 w-screen h-screen fixed top-0 z-50 left-0">
-      <div className="p-10 rounded-lg bg-white text-black w-1/2">
+    <div className="flex items-center justify-center backdrop-blur-md bg-black/20 w-screen h-screen overflow-hidden fixed  top-0 z-50 left-0">
+      <div className="p-5 w-[90%] lg:p-10 rounded-lg bg-white text-black lg:w-1/2">
         <div className="flex items-center justify-between">
           <h1 className="text-2xl font-bold text-center mb-5">Update Task</h1>
         </div>
