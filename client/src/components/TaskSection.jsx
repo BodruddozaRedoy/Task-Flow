@@ -33,7 +33,7 @@ export default function TaskSection() {
             className="py-3 px-5 rounded-lg secondary-bg  w-full mt-5 lg:mt-0"
           />
           {/* search contents  */}
-          <div className="p-3 lg:p-5 rounded-lg absolute top-14 left-0 w-full secondary-bg">
+          <div className="hidden p-3 lg:p-5 rounded-lg absolute top-14 left-0 w-full secondary-bg">
             <div></div>
           </div>
         </div>
