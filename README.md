@@ -12,9 +12,7 @@ A real-time task management application built with **React**, **Express**, **Soc
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [License](#license)
+
 
 ---
 
