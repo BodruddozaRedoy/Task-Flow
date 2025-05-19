@@ -14,7 +14,7 @@ export default function TaskSection() {
   console.log(allTasks);
 
   return (
-    <div className="primary-bg rounded-lg p-5 lg:h-full flex flex-col">
+    <div className="primary-bg rounded-lg p-3 lg:p-5 lg:h-full flex flex-col">
       {/* Header */}
       <div className="flex flex-col lg:flex-row items-center justify-between">
         <div className="flex justify-between lg:justify-start w-full items-center gap-4">
