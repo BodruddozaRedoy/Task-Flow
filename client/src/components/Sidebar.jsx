@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 export default function Sidebar() {
   return (
-    <div className='p-6 w-full'>
+    <div className='p-3 lg:p-6 w-full'>
         {/* sidebar header  */}
         <div className='flex items-center gap-3'>
             <VscTasklist className='text-4xl'/>

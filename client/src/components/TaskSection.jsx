@@ -9,7 +9,7 @@ import useAllTasks from "../hooks/useAllTasks";
 
 export default function TaskSection() {
   const [addTask, setAddTask] = useState(false);
-  const [showTab, setShowTab] = useState("todo")
+  const [showTab, setShowTab] = useState("todo");
   const { allTasks } = useAllTasks();
   console.log(allTasks);
 
@@ -26,19 +26,40 @@ export default function TaskSection() {
           </button>
           <h1 className="font-bold text-xl whitespace-nowrap">All Tasks</h1>
         </div>
-        <input
-          type="text"
-          placeholder="Search your task"
-          className="py-3 px-5 rounded-lg secondary-bg  w-full mt-5 lg:mt-0"
-        />
+        <div className="w-full relative">
+          <input
+            type="text"
+            placeholder="Search your task"
+            className="py-3 px-5 rounded-lg secondary-bg  w-full mt-5 lg:mt-0"
+          />
+          {/* search contents  */}
+          <div className="p-3 lg:p-5 rounded-lg absolute top-14 left-0 w-full secondary-bg">
+            <div></div>
+          </div>
+        </div>
       </div>
 
       <hr className="my-3 lg:my-5" />
       {/* for mobile  */}
-      <div className="flex gap-3 items-center mb-3">
-        <div onClick={() => setShowTab("todo")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">Todo</div>
-        <div onClick={() => setShowTab("on-progress")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">On Progress</div>
-        <div onClick={() => setShowTab("completed")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">Completed</div>
+      <div className="flex lg:hidden gap-3 items-center mb-3">
+        <div
+          onClick={() => setShowTab("todo")}
+          className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg"
+        >
+          Todo
+        </div>
+        <div
+          onClick={() => setShowTab("on-progress")}
+          className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg"
+        >
+          On Progress
+        </div>
+        <div
+          onClick={() => setShowTab("completed")}
+          className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg"
+        >
+          Completed
+        </div>
       </div>
 
       {/* Main Task Grid */}
@@ -49,7 +70,7 @@ export default function TaskSection() {
             <Todo />
           </div>
           <div className="flex lg:hidden w-full">
-            {showTab === "todo" && <Todo/>}
+            {showTab === "todo" && <Todo />}
           </div>
         </div>
 
@@ -59,7 +80,7 @@ export default function TaskSection() {
             <OnProgress />
           </div>
           <div className="flex lg:hidden w-full">
-            {showTab === "on-progress" && <OnProgress/>}
+            {showTab === "on-progress" && <OnProgress />}
           </div>
         </div>
 
@@ -69,14 +90,13 @@ export default function TaskSection() {
             <Completed />
           </div>
           <div className="flex lg:hidden w-full">
-            {showTab === "completed" && <Completed/>}
+            {showTab === "completed" && <Completed />}
           </div>
         </div>
       </div>
 
       {/* Modal: Add Task */}
       {addTask && <AddTask setAddTask={setAddTask} />}
-      
     </div>
   );
 }
