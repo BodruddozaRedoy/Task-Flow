@@ -36,9 +36,9 @@ export default function TaskSection() {
       <hr className="my-3 lg:my-5" />
       {/* for mobile  */}
       <div className="flex gap-3 items-center mb-3">
-        <div onClick={() => setShowTab("todo")} className="py-3 px-2 w-full text-center font-semibold text-md rounded-lg secondary-bg">Todo</div>
-        <div onClick={() => setShowTab("on-progress")} className="py-3 px-2 w-full text-center font-semibold text-md rounded-lg secondary-bg">On Progress</div>
-        <div onClick={() => setShowTab("completed")} className="py-3 px-2 w-full text-center font-semibold text-md rounded-lg secondary-bg">Completed</div>
+        <div onClick={() => setShowTab("todo")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">Todo</div>
+        <div onClick={() => setShowTab("on-progress")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">On Progress</div>
+        <div onClick={() => setShowTab("completed")} className="py-3 px-2 w-full text-center font-semibold text-sm rounded-lg secondary-bg">Completed</div>
       </div>
 
       {/* Main Task Grid */}
