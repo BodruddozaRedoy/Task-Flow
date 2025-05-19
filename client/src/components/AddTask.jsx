@@ -23,6 +23,10 @@ export default function AddTask({ setAddTask }) {
         })
       }
     } catch (error) {
+      Swl.fire({
+            title: "Network Error",
+            icon: "error"
+        })
         console.log(error)
     }
   };
