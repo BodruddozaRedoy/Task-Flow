@@ -19,7 +19,7 @@ export default function OnProgress() {
         </div>
         <div className="flex items-center gap-1.5 rounded-lg px-2 py-1 bg-[#FAD59A]/60">
           <TbProgress className="text-lg" />
-          <p className="font-bold text-xl">5</p>
+          <p className="font-bold text-xl">{filterTodo?.length}</p>
         </div>
       </div>
 

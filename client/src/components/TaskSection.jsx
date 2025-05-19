@@ -4,10 +4,12 @@ import Todo from "./Todo";
 import Completed from "./Completed";
 import OnProgress from "./OnProgress";
 import AddTask from "./AddTask";
+import UpdateTask from "./UpdateTask";
 import useAllTasks from "../hooks/useAllTasks";
 
 export default function TaskSection() {
   const [addTask, setAddTask] = useState(false);
+  
   const { allTasks } = useAllTasks();
   console.log(allTasks);
 
@@ -53,6 +55,7 @@ export default function TaskSection() {
 
       {/* Modal: Add Task */}
       {addTask && <AddTask setAddTask={setAddTask} />}
+      
     </div>
   );
 }
